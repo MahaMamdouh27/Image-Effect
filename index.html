@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reshape Element</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Inter&family=Montserrat:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="all">
+        <div class="container">
+            <div class="my-5 d-flex justify-content-center">
+                <input class="form-control w-50 me-2" type="file" id="formFile">
+                <button type="button" class="btn" id="btn">Upload</button>
+            </div>
+            <div class="box d-flex align-items-center justify-content-center my-5 w-100">
+                <div class="bar w-50">
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between my-2">
+                        <h4>Border</h4>
+                        <p><span id="borderRange"></span></p>
+                    </div>
+                    <input type="range" min="0" max="50" value="0" class="slider" id="borderRadius">
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between my-2">
+                        <h4>Blur</h4>
+                        <p><span id="blurRange"></span></p>
+                    </div>
+                    <input type="range" min="0" max="10" step="0.1" value="0" class="slider" id="blur">
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between my-2" >
+                        <h4>Grayscale</h4>
+                        <p><span id="grayscaleRange"></span></p>
+                    </div>
+                    <input type="range" min="0" max="1" step="0.01" value="0" class="slider" id="grayscale">
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between my-2 ">
+                        <h4>Brightness</h4>
+                        <p><span id="brightnessRange"></span></p>
+                    </div>
+                    <input type="range" min="0" max="200" value="100" class="slider" id="brightness">
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between my-2 ">
+                        <h4>Sepia</h4>
+                        <p><span id="sepiaRange"></span></p>
+                    </div>
+                    <input type="range" min="0" max="1" step="0.01" value="0" class="slider" id="sepia">
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between my-2 ">
+                        <h4>Hue Rotate</h4>
+                        <p><span id="hueRotateRange"></span></p>
+                    </div>
+                    <input type="range" min="0" max="360" value="0" class="slider" id="hueRotate">
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between my-2"  >
+                        <h4>Invert</h4>
+                        <p><span id="invertRange"></span></p>
+                    </div>
+                    <input type="range" min="0" max="100" value="0" class="slider" id="invert">
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between my-2 ">
+                        <h4>Saturate</h4>
+                        <p><span id="saturateRange"></span></p>
+                    </div>
+                    <input type="range" min="0" max="1000" value="100" class="slider" id="saturate">
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between my-2">
+                        <h4>Contrast</h4>
+                        <p><span id="contrastRange"></span></p>
+                    </div>
+                    <input type="range" min="0" max="1000" value="100" class="slider" id="contrast">
+
+                    <div class="shadowContent d-flex justify-content-between align-items-center my-4">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <h6>Drop Shadow</h6>
+                        </div>
+                        <div class="colorPicker">
+                            <input type="color" class="form-control form-control-color" id="exampleColorInput"
+                                value="#563d7c" title="Choose your color">
+                        </div>
+                    </div>
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between">
+                        <h4>Horizontal Shadow Length</h4>
+                        <p><span id="hShadowRange">0</span></p>
+                    </div>
+                    <input type="range" min="-200" max="200" value="0" class="slider" id="hShadow">
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between my-2">
+                        <h4>Vertical Shadow Length</h4>
+                        <p><span id="vShadowRange">0</span></p>
+                    </div>
+                    <input type="range" min="-200" max="200" value="0" class="slider" id="vShadow">
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between my-2">
+                        <h4>Blur Radius</h4>
+                        <p><span id="blurRadiusRange">0</span></p>
+                    </div>
+                    <input type="range" min="0" max="50" value="0" class="slider" id="blurRadius my-2">
+                </div>
+
+                <div class="imgBox">
+                    <img src="img/" id="img" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>

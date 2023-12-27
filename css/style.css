@@ -1,0 +1,77 @@
+body {
+  background-color: #f4eeff;
+}
+:root {
+  --poppins-font: "Poppins", sans-serif;
+  --Montserrat-font: "Montserrat", sans-serif;
+}
+
+* {
+  border-radius: none !important;
+  outline: none !important;
+  /* box-shadow: none !important; */
+}
+
+.btn {
+  background-color: #a6b1e1;
+  color: #424874;
+}
+
+h4{
+  font-family: var(--Montserrat-font) ;
+}
+
+.slidecontainer , .shadowContent{
+  width: 60%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 60%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #424874;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* background: #04AA6D; */
+  cursor: pointer;
+}
+
+/* Additional style for disabled color inputs */
+.slider:disabled {
+  background-color: #f1f1f1; /* Change the background color to a lighter shade */
+  opacity: 0.7; /* Adjust the opacity to visually indicate the disabled state */
+  cursor: not-allowed; /* Change the cursor to not-allowed to indicate that it's disabled */
+}
+
+/* Additional style for the colored element */
+#demo {
+  background-color: rgba(255, 255, 255, 1);
+  margin-top: 20px;
+}
+
+/* .boxImageShadow{
+  box-shadow: 10px 10px blue !important;
+} */
