@@ -12,8 +12,8 @@ let blurRadius = document.getElementById("blurRadius");
 switchBtn.addEventListener('change', boxShadow);
 colorPicker.addEventListener('input', boxShadow);
 document.getElementById("hShadow").addEventListener('input', boxShadow);
-vShadow.addEventListener('input', boxShadow);
-blurRadius.addEventListener('input', boxShadow);
+document.getElementById("vShadow").addEventListener('input', boxShadow);
+document.getElementById("blurRadius").addEventListener('input', boxShadow);
 
 
 function boxShadow() {
@@ -28,12 +28,6 @@ function boxShadow() {
     document.getElementById("hShadowRange").innerHTML = hShadow;
     document.getElementById("vShadowRange").innerHTML = vShadow;
     document.getElementById("blurRadiusRange").innerHTML = blurRadius;
-  // if (switchBtn.checked) {
-  //   let boxShadowValue = `10px 10px 10px ${colorPicker.value}`;
-  //   img.style.boxShadow = boxShadowValue;
-  // } else {
-  //   img.style.boxShadow = "none";
-  // }
 }
 
 btn.addEventListener("click", function () {
